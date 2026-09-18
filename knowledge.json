@@ -1,0 +1,89 @@
+[
+    {
+        "id": "soil_cover_crops",
+        "topic": "Soil health",
+        "title": "Cover crops and soil organic matter",
+        "content": "Cover crops can protect soil from erosion, support soil structure, and contribute organic inputs. Their effects depend on species, climate, soil conditions, management, and duration. Combining cover crops with reduced soil disturbance may support soil health and associated biodiversity.",
+        "variables": [
+            "soil organic carbon",
+            "soil moisture",
+            "biodiversity"
+        ],
+        "recommendation": "Consider locally suitable cover crops or diversified ground cover, while accounting for water availability and crop competition.",
+        "source": "FAO",
+        "source_url": "https://www.fao.org/soils-portal/"
+    },
+    {
+        "id": "agroforestry",
+        "topic": "Biodiversity",
+        "title": "Agroforestry and habitat diversity",
+        "content": "Agroforestry integrates trees with crops or livestock. Depending on design and management, it can improve habitat diversity, support ecosystem functions, and contribute to soil and water conservation. Outcomes vary by local climate, tree species, and land management.",
+        "variables": [
+            "land use",
+            "habitat diversity",
+            "soil health",
+            "water availability"
+        ],
+        "recommendation": "Evaluate locally appropriate agroforestry or tree-based buffer designs that preserve crop productivity and support habitat connectivity.",
+        "source": "FAO",
+        "source_url": "https://www.fao.org/agroforestry/"
+    },
+    {
+        "id": "water_biodiversity",
+        "topic": "Water availability",
+        "title": "Water management and biodiversity",
+        "content": "Water availability affects plant growth, soil biological activity, and habitat conditions. Water conservation practices should account for rainfall patterns, soil properties, crop needs, and local ecological conditions.",
+        "variables": [
+            "rainfall",
+            "soil moisture",
+            "biodiversity"
+        ],
+        "recommendation": "Assess water conservation options such as mulching, appropriate ground cover, and water-efficient management based on local conditions.",
+        "source": "FAO",
+        "source_url": "https://www.fao.org/land-water/"
+    },
+    {
+        "id": "habitat_fragmentation",
+        "topic": "Land use",
+        "title": "Habitat connectivity and land use",
+        "content": "Land-use changes can reduce or fragment habitats and affect biodiversity. Maintaining or restoring suitable habitat connections may support species movement and ecosystem functions. The outcome depends on landscape structure and the species present.",
+        "variables": [
+            "land use",
+            "habitat connectivity",
+            "species diversity"
+        ],
+        "recommendation": "Assess opportunities to preserve native vegetation, restore habitat patches, or create suitable ecological corridors where locally appropriate.",
+        "source": "IPBES",
+        "source_url": "https://www.ipbes.net/"
+    },
+    {
+        "id": "climate_adaptation",
+        "topic": "Climate",
+        "title": "Climate variability and land management",
+        "content": "Changes in temperature and precipitation influence water availability, crop suitability, ecosystem processes, and species distributions. Adaptation decisions should consider local climate patterns, soil conditions, and land-use practices together.",
+        "variables": [
+            "temperature",
+            "rainfall",
+            "soil moisture",
+            "biodiversity"
+        ],
+        "recommendation": "Consider climate-adapted crop choices, diversified planting, and water management based on local climate and soil assessments.",
+        "source": "IPCC",
+        "source_url": "https://www.ipcc.ch/"
+    },
+    {
+        "id": "human_land_pressure",
+        "topic": "Human impact",
+        "title": "Human pressure and ecosystem health",
+        "content": "Agricultural expansion, habitat conversion, pollution, and other human pressures can influence biodiversity and ecosystem functioning. Management responses should identify the relevant pressure and its interaction with soil, water, and habitat conditions.",
+        "variables": [
+            "land use",
+            "human impact",
+            "biodiversity",
+            "water quality"
+        ],
+        "recommendation": "Identify the dominant local pressure and prioritize interventions that reduce ecological harm while considering livelihood and land-use needs.",
+        "source": "IPBES",
+        "source_url": "https://www.ipbes.net/"
+    }
+]
