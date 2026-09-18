@@ -451,6 +451,17 @@ def generate_response(user_query, retrieved_context, history):
 
             error_message = str(error)
 
+            # Gemini free-tier quota exceeded
+            if "429" in error_message or "RESOURCE_EXHAUSTED" in error_message:
+
+                return (
+                    "🌱 **Gemini's free-tier daily quota has been reached.**\n\n"
+                    "The EcoScientist AI app is working correctly, but "
+                    "Gemini has temporarily stopped accepting more requests "
+                    "for this API project.\n\n"
+                    "Please try again after the quota resets."
+                )
+
             # Temporary Gemini server overload
             if "503" in error_message or "UNAVAILABLE" in error_message:
 
@@ -467,9 +478,8 @@ def generate_response(user_query, retrieved_context, history):
                     "Please try again in a few minutes."
                 )
 
-            # Other errors should still be shown
+            # Other errors
             raise
-
 
 # ============================================================
 # USER INTERFACE
