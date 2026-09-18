@@ -14,14 +14,32 @@ from google import genai
 
 load_dotenv()
 
+# Get API key from local .env first
 API_KEY = os.getenv("GEMINI_API_KEY")
+
+# If running on Streamlit Cloud, get it from Streamlit Secrets
+if not API_KEY:
+    try:
+        API_KEY = st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        API_KEY = None
+
+# Get model name
 MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
 
+try:
+    MODEL_NAME = st.secrets.get("GEMINI_MODEL", MODEL_NAME)
+except Exception:
+    pass
+
+# Stop only if the API key is missing everywhere
 if not API_KEY:
+
     st.error(
         "GEMINI_API_KEY is missing. "
-        "Please add it to your .env file."
+        "Please configure it in Streamlit Secrets."
     )
+
     st.stop()
 
 client = genai.Client(api_key=API_KEY)
@@ -31,7 +49,6 @@ st.set_page_config(
     page_icon="🌱",
     layout="wide"
 )
-
 
 # ============================================================
 # KNOWLEDGE BASE
